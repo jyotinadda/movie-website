@@ -1,0 +1,129 @@
+*
+{
+    font-family: Roboto,sans-serif;
+    background: white;
+   
+}
+
+body
+{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+#main-content
+{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,123px);
+    grid-template-areas:
+        "header header header"
+        "aside main main";
+    grid-gap:2px;
+    
+}
+
+
+/*========================== header ========================*/
+header
+{
+    grid-area:header;
+    display:block;
+    background-color: #333545;
+    position:fixed;
+    z-index: 1;
+    width:100%;
+    text-align:center;
+    padding:0;
+    
+}
+input[type="text"],input[type="button"], header img
+{
+    margin-right:30px;
+}
+header img
+{
+    position:relative;
+    background: #333545;
+    top:20px; 
+}
+input[type="text"],input[type="button"]
+{
+    display:inline-block;
+    top:2px;
+    position:relative;
+    border-radius: 4px;
+}
+input[type="text"]
+{
+    width: 66%;
+    padding:10px;
+    height:20px;
+    border:1px solid black;    
+}
+input[type="button"]
+{
+    padding:5px 5px;
+    background-color: #0080ff;
+    color:#fff;
+    text-align: center;
+    border:1px solid #0080ff;  
+}
+#inner-nav-left ul
+{
+    background: #333545;
+}
+#inner-nav-left li
+{
+    text-transform:none;
+    background-color: #333545;
+    color:#fff;
+    font-weight: 400;
+    display:inline-block;
+    margin-right: 20px;
+    float:left;
+    position:relative;
+    left:170px;  
+    padding-bottom: 5px;
+}
+#inner-nav-left li:hover
+{
+    color:#ff0000;
+}
+/*========================== aside ========================*/
+aside
+{
+    margin-top:2px;
+    grid-area: aside;
+    color:blue;
+    background-color:#333545;
+    border-radius: 3px;
+    text-align: center;
+    height:100vh;
+    
+}
+#languages , #Genre
+{
+    background-color:#333545;
+    
+}
+#languages h3,#Genre h3
+{
+    color:#fff;
+    background-color:#333545;
+    text-transform:none;
+    font-weight: 400;
+}
+
+/*========================== aside ========================*/
+main
+{
+    margin-top:2px;
+    grid-area:main;
+    color:blue;
+    background-color:#333545;
+    border-radius: 3px;
+	height:100vh;
+}
+
